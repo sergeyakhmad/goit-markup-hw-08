@@ -1,0 +1,156 @@
+.footer {
+  background-color: $hero-bg-color;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.footer__flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+
+.footer__contacts {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+}
+
+.footer__logo {
+  color: $primary-white-color;
+  transition: color 250ms $cubic;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.address__link {
+  color: $primary-white-color;
+  line-height: 1.71;
+
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__item + .address__item {
+  margin-top: 8px;
+
+  @media screen and (min-width: 1199px) {
+    margin-top: 9px;
+  }
+}
+
+.mail,
+.tel {
+  color: $footer-text-color;
+}
+
+// // invitation
+
+.invitation {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.invitation__text,
+.subscribe__text {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+  text-transform: uppercase;
+}
+
+.invitation .social__link {
+  color: $primary-white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+// // subscribe
+
+.subscribe {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
+
+.subscribe-wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.subscribe__input {
+  padding: 15px 16px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background: $hero-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: 0;
+
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+.subscribe__btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.subcribe__icon {
+  margin-left: 10px;
+}

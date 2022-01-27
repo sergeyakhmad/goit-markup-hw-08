@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 10px 32px;
+
+  background-color: $accent-color;
+  color: $primary-white-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  // border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-family: inherit;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-style: none;
+  cursor: pointer;
+}

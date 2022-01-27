@@ -1,0 +1,40 @@
+.menu-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  z-index: 2;
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: color 250ms $cubic;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.icon-close,
+.icon-menu {
+  fill: currentColor;
+}

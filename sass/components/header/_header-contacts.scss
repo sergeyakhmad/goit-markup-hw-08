@@ -1,0 +1,119 @@
+.header-contacts {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+
+.header-contacts__item + .header-contacts__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.header-contacts__link {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+    transition: color 250ms $cubic;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  .header-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+  }
+}
+
+.header-contacts__icon {
+  margin-right: 8px;
+  fill: currentColor;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+
+  .icon-tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.soc-seti {
+  display: flex;
+  margin-top: 64px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  &__link {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.soc-seti__item:not(:last-child) {
+  margin-right: 20px;
+
+  &::after {
+    content: '';
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
